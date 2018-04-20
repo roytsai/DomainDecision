@@ -5,7 +5,6 @@ import logging
 
 def main():
 
-    logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 
     # jieba custom setting.
     jieba.set_dictionary('jieba_dict/dict.txt.big')

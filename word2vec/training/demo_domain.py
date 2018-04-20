@@ -272,32 +272,23 @@ def log(str):
         print(str) 
 
 if __name__ == '__main__':
-#     init_model()
+    init_model()
 
-
-    list = [{'陳曉東': [0.3442251984412248, 0.16135638923288173, 0.07359049677049935, 0.08725320497888055, 0.32848156058446665, -0.020269713147442553, 0.32848156058446665, 0.1158535401002092, 0.06638309450596065]}, {'水瓶座': [0.2005431339096626, 0.132306570723803, -0.07109442620858936, 0.027670690412675662, 0.39118705535221215, -0.08077716385008842, 0.39118705535221215, -0.035985388254661514, 0.027674574692520566]}]
     
-    
-    
-
-
-     
-#     while True:
-#         try:
-#             query = input()
-#             q_list = query.split()
-#             if len(q_list) == 1:
-# #                 result = domain_decision(q_list[0])
-# #                 print('result = '+result)
-#   
-# #                 domain_decision(q_list[0])
-#                   
-#                 print("相似詞前 100 排序")
-#                 res = model.most_similar(q_list[0],topn = 100)
-#                 for item in res:
-#                     print(item[0]+","+str(item[1]))
-#                   
-#         except Exception as e:
-#             print(repr(e))
+    while True:
+        try:
+            query = input()
+            q_list = query.split()
+            if len(q_list) == 1:
+                result = domain_decision(q_list[0])
+                domain_decision(q_list[0])
+                   
+                print("相似詞前 100 排序")
+                res = model.most_similar(q_list[0],topn = 100)
+                for item in res:
+                    print(item[0]+","+str(item[1]))
+                   
+        except Exception as e:
+            print(repr(e))
 
     
